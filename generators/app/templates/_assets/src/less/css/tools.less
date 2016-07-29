@@ -1,0 +1,15 @@
+.transition(@property:all, @time: 0.2s){
+  -webkit-transition: @arguments linear;
+  -moz-transition: @arguments linear;
+  -ms-transition: @arguments linear;
+  -o-transition: @arguments linear;
+  transition: @arguments linear;
+}
+
+.font-face(@style) when (@style = bold) {
+  font-weight: bold;
+}
+
+.font-face(@style) when (@style = regular) {
+  font-weight: normal;
+}
