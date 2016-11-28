@@ -1,2 +1,27 @@
+@import "../../../plugins/bootstrap/less/bootstrap.less";
+
+@grid-columns:               12;
+@grid-gutter-width:          30px;
+@container-tablet:           (720px + @grid-gutter-width);
+@container-desktop:          (940px + @grid-gutter-width);
+@container-large-desktop:    (1140px + @grid-gutter-width);
+@input-border-focus: @orange;
+
+/* Font Size */
+@font-size-base: 1.4rem;
+@font-size-h1: 4rem;
+@font-size-h2: 3rem;
+@font-size-h3: 2rem;
+
+/*  Colors */
 @white: #fff;
-@black: #000;
+@black: #414042;
+@orange: orange;
+
+/* Media queries */
+@xs:  ~'(max-width: @{screen-xs})';
+@sm:  ~'(max-width: @{screen-sm})';
+@smup:  ~'(min-width: @{screen-sm-min})';
+@md:  ~'(max-width: @{screen-md})';
+@mdup:  ~'(min-width: @{screen-md-min})';
+@lg:  ~'(min-width: @{screen-lg-min})';

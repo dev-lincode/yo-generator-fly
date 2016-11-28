@@ -13,3 +13,12 @@
 .font-face(@style) when (@style = regular) {
   font-weight: normal;
 }
+
+.color(@class, @color, @type: ~ '.'){
+  @{type}@{class}-bg{
+    background: @color;
+  }
+  @{type}@{class}-text{
+    color: @color;
+  }
+}

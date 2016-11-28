@@ -7,8 +7,20 @@
 }
 
 .container-fluid{
-  width: 1140px;
+  max-width: 1140px;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
   position: relative;
+}
+
+.color(white, @white);
+.color(black, @black);
+
+.flip-horizontal{
+  display: inline-block;
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
 }
